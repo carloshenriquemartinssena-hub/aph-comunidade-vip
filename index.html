@@ -3,14 +3,23 @@
 
 <head>
 	<script>
-  // --- Redirecionamento automático para versão mobile ---
   document.addEventListener("DOMContentLoaded", function() {
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    if (isMobile) {
-      window.location.href = "mobile.html";
-    }
+    if (!isMobile) return;
+
+    // Garantir que a base termine com uma barra
+    let basePath = location.pathname;
+    if (!basePath.endsWith('/')) basePath += '/';
+
+    // Monta URL absoluta e redireciona
+    const target = location.origin + basePath + 'mobile.html';
+    // Opcional: se preferir sempre usar rota relativa ao repo raiz, descomente a linha abaixo
+    // const target = location.origin + '/aph-comunidade-vip/mobile.html';
+
+    window.location.href = target;
   });
 </script>
+
 
 
 
@@ -256,4 +265,5 @@ NOS PRIMEIROS 30 DIAS É POSSÍVEL NOTAR RESULTAODS SURPREENDENTES</hgroup>
 </body>
 </html>
 </body>
+
 
