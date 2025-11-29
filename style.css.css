@@ -26,6 +26,19 @@
 	   width: 100%;
 	}
 
+	#videoo { 
+
+		display: flex;
+	 margin-left: 55vh;
+		align-items: center;
+	width:150vh; }
+
+	.video { 
+			border-radius: 16px;
+		aspect-ratio: 16/9;
+		display: block;
+	width:100vh; }
+
 
 	/*Formatação de menu */
 	nav.menu {
@@ -396,7 +409,7 @@
 	font-weight: 580;
 	font-size: 30px;
 	margin-top: 120px;
-	position: absolute;
+	position: relative;
 	left: 50%;
 	height: 70px;
 	width: 1900px;
@@ -708,7 +721,8 @@
 	 	              }
 
 	 	              section#corpo5 {
-	 	              	min-height: 110vh;
+	 	              	max-width: 100%;
+	 	              	min-height: 120vh;
 	 	              	display: block;
 	 	              	justify-content: center;
 	 	              	align-items: center;

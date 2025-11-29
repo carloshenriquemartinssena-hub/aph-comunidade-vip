@@ -65,6 +65,12 @@ details summary::-webkit-details-marker{display:none}
 details .resp{padding:0 18px 18px;max-height:0;opacity:0;overflow:hidden;transition:max-height .35s ease,opacity .25s ease}
 details[open] .resp{max-height:400px;opacity:1}
 
+.video {
+    aspect-ratio: 16/9;
+max-width: 100%;
+border-radius: 16px; 
+}
+
 /* footer */
 .site-footer{padding:20px 0;background:#060606;color:#bdbdbd;text-align:center;border-top:1px solid rgba(255,204,0,0.08)}
 
@@ -102,7 +108,7 @@ details[open] .resp{max-height:400px;opacity:1}
         #corpo4 { background-color: white; color: black; height:80vh;}
         .m001 { width: 40%; position:absolute; margin-left: 50%; margin-top: 25%}
         .m002 { width:40%; margin-left: 0%; margin-top: 45%;position: absolute;}
-        .m003 { width:40%; display:flex;margin-left: 55%; position: absolute; margin-top: 95.6%; }
+        .m003 { width:40%; display:flex;margin-left: 55%; position: absolute; margin-top: 82.6%; }
         #corpo4 .pg { margin-right:-3%; margin-left: -4%;}
 
         #corpo4 h2 { text-transform:uppercase; text-align:center; margin-top: -10%;}
@@ -110,9 +116,9 @@ details[open] .resp{max-height:400px;opacity:1}
         .dpl { font-size: 70%; white-space:nowrap; margin-left:25%  }
         .ter-qua { color:green; margin-top:150%; margin-left: 20%;display:block; font-family: 'onest', sans-serif;}
         .cn { font-weight:400; margin-left:20%; }
-        .seg-ter { margin-top:110%; margin-left: 30%;position: absolute;text-align: left; display:block; color: #81550F }
-        .sa {color: black; margin-top: 120%;margin-left: 8%; font-size:80%; white-space:nowrap; position: absolute;}
-        .faixa2 { margin-top:-20%;}
+        .seg-ter { margin-top:90%; margin-left: 30%;position: absolute;text-align: left; display:block; color: #81550F }
+        .sa {color: black; margin-top: 100%;margin-left: 8%; font-size:80%; white-space:nowrap; position: absolute;}
+        .faixa2 {;}
         .faixa2::after { 
         content:" COMUNIDADE COMUNIDADE COMUNIDA" }
 
@@ -133,8 +139,8 @@ details[open] .resp{max-height:400px;opacity:1}
         .price2  {text-align: center; font-family: 'inter', sans-serif;display: block; margin-top: 10%; font-size: 150%}
         .old2   { display:block; align-items:center; font-size: 70%; color: red; text-decoration: line-through;}
         .chatbot2 { font-size:45%; text-align:center; margin-bottom: 0%}
-        .m01 { width:47%; position:absolute; margin-top: 75%}
-        .m02 { width:47%;position:absolute; margin-top: 75%; margin-left: 50%; display: block; height: auto; overflow-x: hidden; padding: 0;}
+        .m01 { width:47%; position:absolute; margin-top: 68%}
+        .m02 { width:47%;position:absolute; margin-top: 68%; z-index: 10; margin-left: 50%; display: block; height: auto; overflow-x: hidden; padding: 0;}
         .dv { text-align:center;font-family:'pointer', sans-serif; }
                         .resp {background: #606060; color: white;}
 
